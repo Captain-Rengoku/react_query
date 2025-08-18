@@ -1,0 +1,249 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Sundar Pichai Interview one two",
+      "body": "Discussing The Future of Tech"
+    },
+    {
+      "id": "2",
+      "title": "Marques Reviews Tesla",
+      "body": "Tesla's latest EV review"
+    },
+    {
+      "id": "3",
+      "title": "AI in 2024",
+      "body": "Impact on daily life"
+    }
+  ],
+  "todos": [
+    {
+      "id": "1",
+      "title": "Learn JSON Server",
+      "completed": false
+    },
+    {
+      "id": "2",
+      "title": "Deploy on Railway",
+      "completed": true
+    }
+  ],
+  "fruits": [
+    {
+      "id": "1",
+      "name": "Apple"
+    },
+    {
+      "id": "2",
+      "name": "Banana"
+    },
+    {
+      "id": "3",
+      "name": "Orange"
+    },
+    {
+      "id": "4",
+      "name": "Mango"
+    },
+    {
+      "id": "5",
+      "name": "Pineapple"
+    },
+    {
+      "id": "6",
+      "name": "Grapes"
+    },
+    {
+      "id": "7",
+      "name": "Strawberry"
+    },
+    {
+      "id": "8",
+      "name": "Blueberry"
+    },
+    {
+      "id": "9",
+      "name": "Watermelon"
+    },
+    {
+      "id": "10",
+      "name": "Papaya"
+    },
+    {
+      "id": "11",
+      "name": "Peach"
+    },
+    {
+      "id": "12",
+      "name": "Pear"
+    },
+    {
+      "id": "13",
+      "name": "Plum"
+    },
+    {
+      "id": "14",
+      "name": "Kiwi"
+    },
+    {
+      "id": "15",
+      "name": "Lemon"
+    },
+    {
+      "id": "16",
+      "name": "Lychee"
+    },
+    {
+      "id": "17",
+      "name": "Fig"
+    },
+    {
+      "id": "18",
+      "name": "Pomegranate"
+    },
+    {
+      "id": "19",
+      "name": "Dragon Fruit"
+    },
+    {
+      "id": "20",
+      "name": "Passion Fruit"
+    },
+    {
+      "id": "21",
+      "name": "Cantaloupe"
+    },
+    {
+      "id": "22",
+      "name": "Raspberry"
+    },
+    {
+      "id": "23",
+      "name": "Blackberry"
+    },
+    {
+      "id": "24",
+      "name": "Coconut"
+    },
+    {
+      "id": "25",
+      "name": "Guava"
+    },
+    {
+      "id": "26",
+      "name": "Apricot"
+    },
+    {
+      "id": "27",
+      "name": "Mandarin"
+    },
+    {
+      "id": "28",
+      "name": "Starfruit"
+    },
+    {
+      "id": "29",
+      "name": "Mulberry"
+    },
+    {
+      "id": "30",
+      "name": "Boysenberry"
+    },
+    {
+      "id": "31",
+      "name": "Gooseberry"
+    },
+    {
+      "id": "32",
+      "name": "Persimmon"
+    },
+    {
+      "id": "33",
+      "name": "Tangerine"
+    },
+    {
+      "id": "34",
+      "name": "Jackfruit"
+    },
+    {
+      "id": "35",
+      "name": "Soursop"
+    },
+    {
+      "id": "36",
+      "name": "Cranberry"
+    },
+    {
+      "id": "37",
+      "name": "Dates"
+    },
+    {
+      "id": "38",
+      "name": "Nectarine"
+    },
+    {
+      "id": "39",
+      "name": "Quince"
+    },
+    {
+      "id": "40",
+      "name": "Sapodilla"
+    },
+    {
+      "id": "41",
+      "name": "Longan"
+    },
+    {
+      "id": "42",
+      "name": "Salak"
+    },
+    {
+      "id": "43",
+      "name": "Tamarillo"
+    },
+    {
+      "id": "44",
+      "name": "Kumquat"
+    },
+    {
+      "id": "45",
+      "name": "Maracuja"
+    },
+    {
+      "id": "46",
+      "name": "Breadfruit"
+    },
+    {
+      "id": "47",
+      "name": "Bilberry"
+    },
+    {
+      "id": "48",
+      "name": "Medlar"
+    },
+    {
+      "id": "49",
+      "name": "Cloudberry"
+    },
+    {
+      "id": "50",
+      "name": "Miracle Fruit"
+    },
+    {
+      "id": "51",
+      "name": "Ackee"
+    },
+    {
+      "id": "52",
+      "name": "Jujube"
+    },
+    {
+      "id": "53",
+      "name": "Horned Melon"
+    },
+    {
+      "id": "54",
+      "name": "Santol"
+    }
+  ]
+}
