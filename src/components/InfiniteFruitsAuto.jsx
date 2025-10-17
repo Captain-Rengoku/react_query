@@ -35,21 +35,21 @@ const InfiniteFruitsAuto = () => {
     <div className="space-y-2">
       {data?.pages?.map((page) =>
         page?.fruits.map((fruit) => (
-          <div key={fruit.id} className="bg-gray-700 font-bold p-4 rounded-lg">
-            {fruit.id}. {fruit.name}
+          <div key={fruit.id} className="bg-slate-800 text-xl text-indigo-400 font-bold p-4 rounded-lg">
+            <span className="text-red-400">{fruit.id}.</span> {fruit.name}
           </div>
         ))
       )}
 
       {/* <button onClick={fetchNextPage} disabled={!hasNextPage}
-        className="p-2 bg-blue-500 rounded-lg font-bold w-full cursor-pointer hover:bg-blue-600
+        className="p-2 bg-indigo-500 rounded-lg font-bold w-full cursor-pointer hover:bg-indigo-600
         disabled:cursor-not-allowed disabled:bg-red-400"
       >{hasNextPage ? 'Load More..': 'No more Fruits!'}</button> */}
 
       {/* To make the data load automatically when we scroll to the end of the page, 
       we need an intersection observer instead of the above button*/}
       {/* install this package -- npm i react-intersection-observer */}
-      <div ref={ref} className={`p-2 rounded-lg font-bold w-full text-center text-black
+      <div ref={ref} className={`p-2 rounded-lg text-lg font-bold w-full text-center text-black
         ${isFetchingNextPage ? "bg-green-400" : "bg-red-400"}`}>
         {isFetchingNextPage ? "Loading..." : "No more Fruits!"}
       </div>

@@ -20,14 +20,14 @@ const PaginatedFruits = () => {
   return (
     <div className="space-y-2">
       {data?.data?.map((fruit) => (
-        <div key={fruit.id} className="bg-gray-700 font-bold p-4 rounded-lg">
-          {fruit.id}. {fruit.name}
+        <div key={fruit.id} className="bg-slate-800 text-xl text-indigo-400 font-bold p-4 rounded-lg">
+          <span className="text-red-400">{fruit.id}.</span> {fruit.name}
         </div>
       ))}
 
-      <div className="flex gap-2">
+      <div className="flex gap-2 justify-center">
         <button
-        className="bg-blue-700 p-2 rounded-lg font-bold"
+        className="bg-indigo-700 hover:bg-indigo-800 cursor-pointer p-2 rounded-lg font-bold"
           onClick={() => setPage((prev) => prev - 1)}
           disabled={page <= 1}
         >
@@ -35,7 +35,7 @@ const PaginatedFruits = () => {
         </button>
 
         <button
-        className="bg-blue-700 p-2 rounded-lg font-bold"
+        className="bg-indigo-700 hover:bg-indigo-800 cursor-pointer p-2 rounded-lg font-bold"
           onClick={() => setPage((prev) => prev + 1)}
           disabled={page >= data.pages}
         >

@@ -50,28 +50,52 @@ function GetPostsReactQuery() {
   });
 
   console.log(isLoading, isFetching);
-  if (isError) return <div>Some error has occurred: {error.message}</div>;
+  if (isError) return <div className="text-xl text-center text-red-400 mt-28">Some error has occurred : {error.message}</div>;
 
   return (
     <>
       {/* lets use POST a post form here */}
       <PostPostsReactQuery />
       {/* let make a buttton to fetch the data instead */}
-      <button onClick={refetch} className="bg-gray-700 hover:bg-gray-800 cursor-pointer 
-      w-full mt-8 rounded-lg p-2">
+      <button
+        onClick={refetch}
+        className="bg-slate-700 hover:bg-slate-800 cursor-pointer 
+      w-full mt-8 rounded-lg p-2"
+      >
         Fetch Posts Manually
       </button>
       {isLoading ? (
-        <div>Page is Loading...</div>
+        <div className="text-xl text-center text-green-400 mt-28">Page is Loading...</div>
       ) : (
         <div className="grid grid-cols-2 mt-8 gap-4 text-green-300">
           {posts?.map((post) => (
             <NavLink key={post.id} to={`/react-query-posts/${post.id}`}>
-              <div className="bg-neutral-600 p-4 text-sm rounded-lg font-bold">
-                <h3>User ID: {post.userId}</h3>
-                <h3>Title is: {post.title}</h3>
-                <p>Content is: {post.content}</p>
-                <p>Like Count: {post.likes}</p>
+              <div
+                key={post.id}
+                className="bg-slate-800 text-slate-100 p-5 rounded-xl shadow-md border border-slate-700 hover:shadow-lg hover:border-indigo-500 transition-all duration-300"
+              >
+                <div className="mb-2 flex justify-between items-center">
+                  <h3 className="text-sm text-slate-400">
+                    User ID: {post.userId}
+                  </h3>
+                  <span className="text-xs bg-indigo-600 text-white px-2 py-0.5 rounded-md">
+                    #{post.id}
+                  </span>
+                </div>
+
+                <h2 className="text-xl font-semibold text-indigo-400 mb-2">
+                  {post.title}
+                </h2>
+
+                <p className="text-slate-300 mb-3 leading-relaxed">
+                  {post.content}
+                </p>
+
+                <div className="flex justify-between items-center text-sm">
+                  <p className="text-indigo-300 font-medium">
+                    ❤️ Likes: <span className="text-white">{post.likes}</span>
+                  </p>
+                </div>
               </div>
             </NavLink>
           ))}

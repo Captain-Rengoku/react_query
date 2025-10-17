@@ -73,21 +73,21 @@ const PostPostsReactQuery = () => {
     <div className="flex w-full justify-center">
       <form
         onSubmit={handleSubmit}
-        className="bg-gray-700 flex flex-col p-4 w-80 rounded-lg gap-4"
+        className="bg-slate-800 flex flex-col p-4 w-80 rounded-lg gap-4"
       >
         <input
           type="text"
           placeholder="Enter your Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          className="border-2 border-gray-500 p-2 rounded-lg"
+          className="border-2 border-slate-500 p-2 rounded-lg"
         />
         <input
           type="text"
           placeholder="Enter your Content"
           value={content}
           onChange={(e) => setContent(e.target.value)}
-          className="border-2 border-gray-500 p-2 rounded-lg"
+          className="border-2 border-slate-500 p-2 rounded-lg"
         />
         <button
           type="submit"

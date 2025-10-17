@@ -24,13 +24,34 @@ const GetSinglePostDetailsReactQuery = () => {
 
   return (
     <>
-      <div>Post Detail React Query Page</div>
-      <div className="bg-neutral-600 p-4 text-sm rounded-lg font-bold">
-        <h3>User ID: {userId}</h3>
-        <h3>Title is: {title}</h3>
-        <p>Content is: {content}</p>
-        <p>Like Count: {likes}</p>
-      </div>
+      <div className="text-4xl text-center m-4 mb-12 text-slate-200">Post Detail React Query Page</div>
+              <div
+                key={userId}
+                className="bg-slate-800 text-slate-100 p-5 rounded-xl shadow-md border border-slate-700 hover:shadow-lg hover:border-indigo-500 transition-all duration-300"
+              >
+                <div className="mb-2 flex justify-between items-center">
+                  <h3 className="text-sm text-slate-400">
+                    User ID: {userId}
+                  </h3>
+                  <span className="text-xs bg-indigo-600 text-white px-2 py-0.5 rounded-md">
+                    #{userId}
+                  </span>
+                </div>
+
+                <h2 className="text-xl font-semibold text-indigo-400 mb-2">
+                  {title}
+                </h2>
+
+                <p className="text-slate-300 mb-3 leading-relaxed">
+                  {content}
+                </p>
+
+                <div className="flex justify-between items-center text-sm">
+                  <p className="text-indigo-300 font-medium">
+                    ❤️ Likes: <span className="text-white">{likes}</span>
+                  </p>
+                </div>
+              </div>
     </>
   );
 };
